@@ -1,13 +1,15 @@
 package nicolas.vycas.nery.server;
 
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * Hello world!
  *
+ * @author Nicolas Vycas Nery
  */
 public class App {
-    private static Logger logger = Logger.getLogger(App.class.getName());
+    private final static Logger logger = Logger.getLogger(App.class.getName());
+
     public static void main(String[] args) {
         logger.info("Starting server...");
         // try to get the port from environment variable
@@ -21,7 +23,7 @@ public class App {
         try {
             portNumber = Integer.parseInt(port);
         } catch (NumberFormatException e) {
-            logger.severe("Invalid port number: " + port);
+            logger.log(Level.SEVERE, "Invalid port number: {0}", port);
             System.exit(1);
         }
         MultithreadedTCPServer server = MultithreadedTCPServer.create(portNumber);
