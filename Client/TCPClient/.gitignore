@@ -1,0 +1,15 @@
+# Maven temporary files
+target/
+
+# IDE files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Generated files
+*.log
+*.txt
+
+# OS-specific files
+.DS_Store
