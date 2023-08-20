@@ -62,9 +62,9 @@ public class MultithreadedTCPServer {
             this.socket = socket;
             try {
                 PrintWriter writer = new PrintWriter(socket.getOutputStream(), true);
-                writer.println("Welcome to the chat!");
-                writer.println("You are connected to the server.");
-                writer.println("Type your message and press enter to send it to the other clients.");
+                writer.println("Welcome to the chat!👋");
+                writer.println("You are connected to the server.🌐");
+                writer.println("Type your message and press enter to send it to the other clients💬.");
             } catch (IOException e) {
                 MultithreadedTCPServer.logger.log(Level.SEVERE, "Error handling client: {0}", e.getMessage());
             }
