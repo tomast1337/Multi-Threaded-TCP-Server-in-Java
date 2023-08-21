@@ -317,6 +317,7 @@ public class ClientUIJFrame extends JFrame {
             this.jTextFieldMessage.setEnabled(true);
             this.jTextAreaMessages.setEnabled(true);
             this.jTextFieldMessage.setText("");
+            this.jTextAreaMessages.setText("");
 
             JOptionPane.showMessageDialog(this, "Connected to " + host + ":" + port, "Success",
                     JOptionPane.INFORMATION_MESSAGE);
